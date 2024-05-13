@@ -1,0 +1,23 @@
+ return InkWell(
+                            child: Container(
+                              margin: EdgeInsets.symmetric(horizontal: 8),
+                              padding: EdgeInsets.symmetric(vertical: 10),
+                              decoration: BoxDecoration(
+                                color: index == 1 ? Colors.yellowAccent:Colors.white,
+                                borderRadius: BorderRadius.circular(5),
+                                border: index != 1 ? Border.all(color:Colors.white60):null,
+
+                              ),
+                              child: Center(
+                                child: Text(formats[index],
+                                style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                  color: Colors.white70,
+                                ),
+                                ),
+
+                              ),
+                            ),
+                          );
+
+
